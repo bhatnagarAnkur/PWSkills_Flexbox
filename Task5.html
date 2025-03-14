@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      .header {
+        background-image: url("Irctc_bg.jpg");
+        background-repeat: no-repeat;
+        width: 98vw;
+        height: 97vh;
+        margin: 5px;
+      }
+      .headerContent {
+        width: 40%;
+        float: right;
+        color: #203d77;
+        font-weight: bold;
+      }
+
+      .headerContent div {
+        text-transform: uppercase;
+        font-size: xxx-large;
+      }
+
+      .headerContent p {
+        text-transform: capitalize;
+        font-size: x-large;
+        margin-left: 100px;
+        font-weight: lighter;
+      }
+
+      .formContainer {
+        width: 500px;
+        height: 450px;
+        position: relative;
+        top: 50px;
+        left: 100px;
+        background-color: white;
+      }
+
+      .formHeader {
+        width: 226px;
+        height: 30px;
+        display: inline-block;
+        border: 1px solid gray;
+        background-color: #203d77;
+        color: white;
+        text-transform: uppercase;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+
+      .formContainer .formText {
+        text-transform: uppercase;
+        color: #203d77;
+        text-transform: uppercase;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+
+      .formContainerTable {
+        display: table;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .formContainerRow {
+        display: table-row;
+      }
+
+      .formContainerCell {
+        display: table-cell;
+        margin: 20px;
+      }
+
+      input[type='text'], input[type='date']
+      {
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+      }
+
+      select
+      {
+        padding: 10px;
+        margin: 10px;
+        width: 90%;
+      }
+
+      input[type='checkbox']
+      {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .btnSubmit
+      {
+        padding: 10px;
+        margin: 10px;
+        color: white;
+        background-color: #f97a2b;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerContent">
+        <div>indian railways</div>
+        <p>Safety | Security | Punctuality</p>
+      </div>
+      <div class="formContainer">
+        <span class="formHeader">pnr status</span>
+        <span class="formHeader">charts/ vacency</span>
+        <p class="formText">book ticket</p>
+        <form>
+          <div class="formContainerTable">
+            <div class="formContainerRow">
+              <div class="formContainerCell">
+                <input type="text" placeholder="From" />
+              </div>
+              <div class="formContainerCell">
+                <input type="date" placeholder="DD/MM/YYYY" />
+              </div>
+            </div>
+            <div class="formContainerRow">
+              <div class="formContainerCell">
+                <input type="text" placeholder="To" />
+              </div>
+              <div class="formContainerCell">
+                <select>
+                  <option>All Classes</option>
+                  <option>AC First Class</option>
+                  <option>AC 2 Tire</option>
+                  <option>AC 3 Tire</option>
+                  <option>Sleeper</option>
+                  <option>Non AC</option>
+                </select>
+              </div>
+            </div>
+            <div class="formContainerRow">
+              <div class="formContainerCell">
+                <select>
+                  <option>General</option>
+                  <option>Ladies</option>
+                  <option>Tatkal</option>
+                  <option>Premium Tatkal</option>
+                  <option>Disability</option>
+                </select>
+              </div>
+              <div class="formContainerCell"></div>
+            </div>
+            <div class="formContainerRow">
+              <div class="formContainerCell">
+                <input type="checkbox" />Person With Disability Concession
+              </div>
+              <div class="formContainerCell">
+                <input type="checkbox" />Flexible With Date
+              </div>
+            </div>
+            <div class="formContainerRow">
+              <div class="formContainerCell">
+                <input type="checkbox" />Train with Available Berth
+              </div>
+              <div class="formContainerCell">
+                <input type="checkbox" />Railway Pass Concession
+              </div>
+            </div>
+            <div class="formContainerRow">
+              <div class="formContainerCell">
+                <button class="btnSubmit">Serach</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>

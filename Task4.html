@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans","Roboto", "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      div.flex-container {
+        width: 99vw;
+        height: 99vh;
+        background-color: #070127;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div.flex-item {
+        width: 700px;
+        height: 300px;
+        background-color: #f5f1f8;
+        border: 2px solid #0ab54c;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .divPlan {
+        width: 150px;
+        height: 250px;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+
+      .divContent {
+        margin: 20px 5px;
+        margin-left: 20px;
+        padding: 10px 0px;
+      }
+
+      .planType {
+        font-weight: bolder;
+        font-size: x-large;
+        padding-bottom: 10px;
+      }
+      .planUse {
+        font-size: x-small;
+        padding-bottom: 10px;
+      }
+
+      .planPrice {
+        font-size: x-large;
+        padding-bottom: 10px;
+      }
+
+      ul li::before {
+        content: "\f058"; /* Unicode for Font Awesome check-circle */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: #212842;
+        margin-right: 4px;
+      }
+      ul.plantOptions {
+        padding-bottom: 10px;
+        padding-left: 5px;
+        list-style-type: none;
+        font-size: x-small;
+      }
+
+      .divContent button {
+        border-radius: 10px;
+        background-color: #212842;
+        color: white;
+        padding: 5px;
+        font-size: x-small;
+        margin-left: 10px;
+        cursor: pointer;
+        border: 1px solid white;
+      }
+
+      .divFree,
+      .divPro {
+        background-color: white;
+      }
+
+      .divBasic {
+        background-color: #212842;
+        color: white;
+      }
+
+      .divBasic .divContent button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+
+      .divBasic  ul li::before {
+       
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="divPlan divFree">
+          <div class="divContent">
+            <p class="planType">Free Plan</p>
+            <p class="planUse">For Personal</p>
+            <p class="planPrice">$0</p>
+            <ul class="plantOptions">
+              <li>1 user</li>
+              <li>4 web mails</li>
+              <li>Responsive website</li>
+              <li>Free SSL</li>
+            </ul>
+            <button type="button">Subscribe now</button>
+          </div>
+        </div>
+        <div class="divPlan divBasic">
+          <div class="divContent">
+            <p class="planType">Basic Plan</p>
+            <p class="planUse">For small business</p>
+            <p class="planPrice">$29</p>
+            <ul class="plantOptions">
+              <li>4 user</li>
+              <li>10 web mails</li>
+              <li>Responsive website</li>
+              <li>Free SSL</li>
+            </ul>
+            <button type="button">Subscribe now</button>
+          </div>
+        </div>
+        <div class="divPlan divPro">
+          <div class="divContent">
+            <p class="planType">Pro Plan</p>
+            <p class="planUse">For enterprise</p>
+            <p class="planPrice">$49</p>
+            <ul class="plantOptions">
+              <li>unlimited users</li>
+              <li>unlimited web mails</li>
+              <li>Responsive website</li>
+              <li>Free SSL + SEO</li>
+            </ul>
+            <button type="button">Subscribe now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
